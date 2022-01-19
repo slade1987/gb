@@ -23,4 +23,3 @@ print("Список кубов " + str(list))
 print("Количество элемнтов " + str(len(list)))
 print("Список элементов полученных / на 7 " + str(res_list))
 print("Итоговая сумма " + str(res_summ))
-

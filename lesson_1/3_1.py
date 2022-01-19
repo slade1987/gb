@@ -6,4 +6,4 @@ while (i < 101):
         print(str(i) + " Процент")
     else:
         print(str(i) + " Процента")
-    i+=1
+    i += 1
