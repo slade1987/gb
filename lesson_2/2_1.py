@@ -8,7 +8,7 @@ for i in range(len(str)):
     elif (str[i][0] == '+'):
         c,n = str[i].split('+')
         if (int(n) < 9 ):
-            str[i] = '"' + '0' + n + '"'
+            str[i] = '"' +'+' + '0' + n + '"'
         else:
-            str[i] = '"' + n +'"'
+            str[i] = '"' +'+' + n +'"'
 print(" ".join(str))
