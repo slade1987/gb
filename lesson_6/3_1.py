@@ -41,3 +41,8 @@ while True:
     res.write("\n")
 
 '''
+
+hobby.close()
+users.close()
+res.close()
+
