@@ -22,7 +22,6 @@ while True:
 
 res.write(str(dict(mass)))
 
-
 '''
 #Решение 2
 while True:
