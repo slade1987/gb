@@ -1,0 +1,19 @@
+
+def type_logger(func):
+    def logger_87(*a, **kwargs):
+        mas = []
+        for i in a:
+            mas.append(i)
+        if kwargs.values() !=0:
+            for i in kwargs:
+                mas.append(kwargs[i])
+        for i in mas:
+            if type(i) == float or type(i) == int:
+                print(func(i),' : ', i, " : ", type(i))
+    return logger_87
+
+@type_logger
+def calc_cube(x):
+    return x ** 3
+
+print(calc_cube(5,54,545.5,name = 5, Fio = 44, ss ='ffdfd'))
