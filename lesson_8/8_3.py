@@ -1,6 +1,6 @@
 
 def type_logger(func):
-    def logger_87(*a, **kwargs):
+    def wrapper(*a, **kwargs):
         mas = []
         for i in a:
             mas.append(i)
@@ -10,7 +10,7 @@ def type_logger(func):
         for i in mas:
             if type(i) == float or type(i) == int:
                 print(func(i),' : ', i, " : ", type(i))
-    return logger_87
+    return wrapper
 
 @type_logger
 def calc_cube(x):
