@@ -1,5 +1,7 @@
+from functools import wraps
 
 def type_logger(func):
+    @wraps(func)
     def wrapper(*a, **kwargs):
         mas = []
         for i in a:

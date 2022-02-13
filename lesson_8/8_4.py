@@ -1,4 +1,4 @@
-from functools import  wraps
+from functools import wraps
 
 def val_checker(func):
     def sec_val_cheker(sec_func):
