@@ -10,6 +10,7 @@ def type_logger(func):
         for i in mas:
             if type(i) == float or type(i) == int:
                 print(func(i),' : ', i, " : ", type(i))
+        print(f'Имя функции = {func.__name__}')
     return wrapper
 
 @type_logger
