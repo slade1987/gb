@@ -23,8 +23,21 @@ class Cell:
             return str(self.cellnuber // other.cellnuber)
 
     def make_order(self,numb):
-        return str(self.cellnuber * numb)
+        cell_str = ''
+        i = 0
+        if self.cellnuber > numb:
+            i = self.cellnuber // numb
+        else:
+            cell_str = numb * '*'
+            return cell_str
+        for j in range(i):
+            cell_str = cell_str + (numb * '*')
+            cell_str = cell_str + '\n'
 
-a = Cell(5)
-a.make_order(5)
+        if (self.cellnuber % numb ) > 0:
+            cell_str = cell_str + ((self.cellnuber % numb) * '*')
+        return cell_str
+
+a = Cell(12)
+print(a.make_order(5))
 
