@@ -26,7 +26,7 @@ class Matrix:
 
 
 
-matr = Matrix([[1,2,3],[1,2,3]])
-matr1 = Matrix([[1,2,3],[1,2,3]])
+matr = Matrix([[1,2,3],[1,2,3],[1,2,3]])
+matr1 = Matrix([[1,2,3],[1,2,3],[1,2,3]])
 matr2 = matr + matr1
 print(matr2)
