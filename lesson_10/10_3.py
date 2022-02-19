@@ -38,6 +38,13 @@ class Cell:
             cell_str = cell_str + ((self.cellnuber % numb) * '*')
         return cell_str
 
+
 a = Cell(12)
+b = Cell(10)
+print('a - b',a - b)
+print('a + b',a + b)
+print('a * b',a * b)
+print('a / b',a / b)
+print('\n \nГрафическое отображение ')
 print(a.make_order(5))
 
