@@ -3,16 +3,16 @@ class Cell:
         self.cellnuber = cell_number
 
     def __add__(self, other):
-        return str(self.cellnuber + other.cellnuber)
+        return Cell(self.cellnuber + other.cellnuber)
 
     def __sub__(self, other):
         if self.cellnuber < other.cellnuber:
             return "ОШИБКА"
         else:
-            return str(self.cellnuber - other.cellnuber)
+            return Cell(self.cellnuber - other.cellnuber)
 
     def __mul__(self, other):
-        return str(self.cellnuber * other.cellnuber)
+        return Cell(self.cellnuber * other.cellnuber)
 
     def __truediv__(self, other):
         if other.cellnuber < 1:
@@ -20,7 +20,7 @@ class Cell:
         elif self.cellnuber < other.cellnuber:
             return "Будет ноль клеток, что невозможно"
         else:
-            return str(self.cellnuber // other.cellnuber)
+            return Cell(self.cellnuber // other.cellnuber)
 
     def make_order(self,numb):
         cell_str = ''
